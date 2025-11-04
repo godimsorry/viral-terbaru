@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Live Omek</title>
+
+    <!-- 🔹 Adsterra Popunder (letakkan di <head>) -->
+    <script type='text/javascript'
+        src='//pl27986265.effectivegatecpm.com/fd/21/0b/fd210b4df37e07845f6a6eeb628921b6.js'></script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -184,8 +189,7 @@
             left: 10px;
             width: calc(100% - 20px);
             display: none;
-            /* Awalnya disembunyikan */
-            flex:auto;
+            flex: auto;
             z-index: 2;
             background: rgba(0, 0, 0, 0.6);
             border-radius: 25px;
@@ -316,12 +320,7 @@
 
         function toggleChatInput() {
             const chatInput = document.getElementById('chatInputContainer');
-            if (chatInput.style.display === 'flex') {
-                chatInput.style.display = 'none';
-            } else {
-                chatInput.style.display = 'flex';
-                document.getElementById('userMessage').focus();
-            }
+            chatInput.style.display = chatInput.style.display === 'flex' ? 'none' : 'flex';
         }
 
         function redirectDirectly() {
@@ -356,13 +355,11 @@
                 i++;
             }
         }, 1300);
-
-        document.getElementById('userMessage').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                redirectDirectly();
-            }
-        });
     </script>
+
+    <!-- 🔹 Adsterra Social Bar (letakkan sebelum </body>) -->
+    <script type='text/javascript'
+        src='//pl27986269.effectivegatecpm.com/20/a1/fe/20a1fe0a7c21f8d7074e1087af13cbdb.js'></script>
 
 </body>
 
